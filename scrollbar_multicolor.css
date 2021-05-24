@@ -1,4 +1,4 @@
-@-moz-document url-prefix("https://www.fembed.com"), url-prefix("https://mixdrop.sx/"), url-prefix("https://www.vidmob.com"), domain("upstream.to"), domain("fvs.io"), domain("www331.ff-01.com"), domain("sendvid.com"), domain("parisanime.com"), domain("fembed.com "), domain("sendvid.net"), domain("sibnet.ru"), domain("mystream.to"), domain("streamz.ws"), domain("vedbom.com"), domain("mavplay.xyz"), domain("embed.mystream.to"), domain("mystream.to"), domain("streamtape.com"), domain("dood.watch"), domain("upvid.co"), domain("upvid.host"), domain("mixdrop.sx "), domain(" vudeo.net"), domain("streamtape.com"), domain("upstream.to"), domain("jetload.net "), domain("wikiserie.org"), domain("mixdrop.sx"), domain("mstream.press"), domain("vudeo.net"), domain("streamcrypt.net"), domain("vidmob.com"), domain("player.vimeo.com"), domain("vimeo.com"), domain("down-paradise.com"), domain("openload.co"), domain("ocine.co"), domain("youtube.com"), domain("ddl-francais.com"), domain("netu.tv"), domain("vostanimes.net"), domain("ogp.me"), domain("elahmad.com"), domain("dood.so"), domain("netutv.net"), domain("wigistream.to"), domain("cloudstream.to"), domain("allfoot.info"), domain("telerium.digital"), domain("hqq.tv"), domain("vidoza.net"), domain("vidlox.me"), domain("vshare.eu"), domain("ok.ru"), domain("") {
+@-moz-document url-prefix("https://www.fembed.com"), url-prefix("https://mixdrop.sx/"), url-prefix("https://www.vidmob.com"), domain("upstream.to"), domain("fvs.io"), domain("www331.ff-01.com"), domain("sendvid.com"), domain("parisanime.com"), domain("fembed.com "), domain("sendvid.net"), domain("sibnet.ru"), domain("mystream.to"), domain("streamz.ws"), domain("vedbom.com"), domain("mavplay.xyz"), domain("embed.mystream.to"), domain("mystream.to"), domain("streamtape.com"), domain("dood.watch"), domain("upvid.co"), domain("upvid.host"), domain("mixdrop.sx "), domain(" vudeo.net"), domain("streamtape.com"), domain("upstream.to"), domain("jetload.net "), domain("wikiserie.org"), domain("mixdrop.sx"), domain("mstream.press"), domain("vudeo.net"), domain("streamcrypt.net"), domain("vidmob.com"), domain("player.vimeo.com"), domain("vimeo.com"), domain("down-paradise.com"), domain("openload.co"), domain("ocine.co"), domain("youtube.com"), domain("ddl-francais.com"), domain("netu.tv"), domain("vostanimes.net"), domain("ogp.me"), domain("elahmad.com"), domain("dood.so"), domain("netutv.net"), domain("wigistream.to"), domain("cloudstream.to"), domain("allfoot.info"), domain("telerium.digital"), domain("hqq.tv"), domain("vidoza.net"), domain("vidlox.me"), domain("vshare.eu"), domain("ok.ru"), domain("rutube.ru") {
 
 /* 👋🏽 Hello, fellow web developer! 👋🏽 */
 
@@ -243,6 +243,11 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms  !important;
 }
+/* rutube */
+.raichu-progress-bar-module__progressBarBefore,
+.raichu-progress-bar-module__progressBarThumb,
+.raichu-progress-bar-module__progressBarBefore,
+.raichu-progress-bar-module__progressBarThumb,
 /*wigistream*/
 /*.bar-fill-1,*/ /*ugly*/
 .bar-fill-2,
