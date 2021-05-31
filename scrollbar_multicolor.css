@@ -3,7 +3,7 @@
 /* Initial setup */
 :root {
     --color-transition-duration: 10s;
-    --color-transition-duration2: 30s;
+    --color-transition-duration2: 35s;
     --standard-ease: cubic-bezier(0.4, 0.0, 0.2, 1)
 }
 
@@ -281,23 +281,22 @@ ytd-thumbnail:hover {
     0% {
         filter: contrast(300%) hue-rotate(340deg) /* red*/
     }
-    5% {
-        filter: contrast(300%) hue-rotate(340deg) /* red*/
-    }
+    
+    
     15% {
         filter: contrast(250%)  hue-rotate(30deg) /* orange made by me */
     }
     25% {
-        filter:  hue-rotate(45deg) /* yellow lmao*/
+        filter:  contrast(200%) hue-rotate(45deg) /* yellow lmao*/
     }
     35% {
-        filter: contrast(70%) hue-rotate(90deg) /* light green */
+        filter: contrast(70%) hue-rotate(85deg) /* light green */
     }
     45% {
-        filter: contrast(350%) hue-rotate(90deg)
+        filter: contrast(350%) hue-rotate(90deg) /* dark green*/
     }
     55% {
-        filter: contrast(70%) hue-rotate(180deg) /*light blue */
+        filter: contrast(70%) hue-rotate(175deg) /*light blue */
     }
     65% {
         filter: contrast(350%) hue-rotate(180deg) /* dark blue normally*/
@@ -308,9 +307,7 @@ ytd-thumbnail:hover {
     85% {
         filter: contrast(150%) hue-rotate(340deg) /* light red normally */
     }
-    95% {
-        filter: contrast(300%) hue-rotate(340deg) /* red*/
-    }
+   
     100% {
         filter: contrast(300%) hue-rotate(340deg) /* red*/
     }
@@ -575,7 +572,7 @@ video::-webkit-media-controls-panel,
 }
 /* Sound cloud */
 .sceneLayer, .sc-button-play, .playbackTimeline, .heroPlayButton, .g-tabs-item, .header__logo, .premiumIconLink, .sc-button-group, .dashbox__icon, .dashbox__ctaLabel, .shuffleButton, .playbackSoundBadge__actions, .playControls__repeat, .composeMessage__sendButton, .sc-button-follow, .trackItem__trackTitle, .notificationIcon {
-    animation: Hue-Transition  var(--color-transition-duration2) linear infinite !important;
+    animation: Hue-Transition  var(--color-transition-duration2) linear infinite running  !important;
   }
   
   .waveformCommentsNode {
