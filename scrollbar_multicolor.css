@@ -280,8 +280,13 @@ ytd-thumbnail:hover {
 }
 
 /* Background Animation */
-/* vimeo */
 
+/* canal */
+._1eOxJweaILaumq-VtlI4SI,
+._3SHBY66lMFqVCR0_BKIQ9Y,
+._2NomCcqko65kqrzXLRjjPK ._2Idw_dWy5kgjHb2lloPRmQ ._3p05QmbT3Gf13kuUVqaX_A,
+
+._1eOxJweaILaumq-VtlI4SI,
 /*ok.ru*/
 .html5-vpl_volume-bar_point,
 .html5-vpl_volume-bar_drag,
@@ -393,6 +398,17 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
+/* video tag */
+progress::-moz-progress-bar,
+progress::-webkit-progress-value,
+progress,
+video,
+.videocontrols,
+video::-webkit-media-controls-panel,
+.progressBar,
+/* open source project */
+.fp-progress .fp-color,
+.flowplayer-ovp-branding-56058953-2cbd-4858-a915-1253bf7ef7b2 .fp-color,
 /*vimeo*/
 .played,
 .volume div:not([class="animate fill0"]),
@@ -418,6 +434,21 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
+/* open source project */
+/* MediaElement.js */
+.mejs__volume-handle,
+.mejs__volume-current,
+.mejs__volume-handle:link,
+.mejs__volume-current:link,
+.mejs__time-handle-content,
+.mejs__time-hovered,
+.mejs__horizontal-volume-current,
+.mejs__time-current{
+    border: currentcolor !important;
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
+    -moz-transition: background-color linear 100000ms !important;
+}
 
 /* rutube */
 .raichu-progress-bar-module__progressBarBefore [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
@@ -436,7 +467,33 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
-
+/* dailymotion */
+.np_SliderVolume-handle, /* hard to find*/
+.np_SliderVolume-fill,
+.np_slider-fill .np_SliderVolume-fill,
+.np_slider-handle .np_SliderVolume-handle,
+.np_slider-fill .np_ProgressBarVideo-fill,
+.np_ProgressBarVideo-fill{
+    background: currentcolor none repeat scroll 0% 0% !important;
+    background-color: currentcolor !important;
+    fill: currentcolor !important;
+    background-repeat: no-repeat !important;
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
+    transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
+    -moz-transition: background-color linear 100000ms !important;
+}
+.video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar{
+    background:grey !important;
+}
+.video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar .vjs-volume-level{
+    background: currentcolor none repeat scroll 0% 0% !important;
+    background-color: currentcolor !important;
+    fill: currentcolor !important;
+    background-repeat: no-repeat !important;
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
+    transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
+    -moz-transition: background-color linear 100000ms !important;
+}
 /*Dood*/
 .vjs-play-progress.vjs-slider-bar::before,
 .plyr--full-ui input[type="range"]::-moz-range-thumb {
