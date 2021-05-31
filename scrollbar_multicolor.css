@@ -280,7 +280,7 @@ ytd-thumbnail:hover {
 }
 
 /* Background Animation */
-
+/* vimeo */
 
 /*ok.ru*/
 .html5-vpl_volume-bar_point,
@@ -355,13 +355,11 @@ yt-icon.yt-live-chat-ticker-renderer,
 a.ytp-sb-subscribe {
     animation: BgTransition var(--color-transition-duration) linear infinite;
 }
-/* Brut Force */
 /*streamtape */
 .plyr--full-ui input[type="range"] {
     background-color: BgTransition var(--color-transition-duration) linear infinite !important;
     animation: ColorTransition var(--color-transition-duration) linear infinite !important;
 }
-/* Brut Force */
 /* sendvid */
 /*.video-js , */
 .vjs-default-skin .vjs-play-progress,
@@ -382,7 +380,6 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
-/* Brut Force */
 /* twitch */
 .ScRangeFillValue-sc-1qrd37x-3.bEAVPu,
 .InjectLayout-sc-588ddc-0.eXwenY,
@@ -396,7 +393,6 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
-/* Brut Force */
 /*vimeo*/
 .played,
 .volume div:not([class="animate fill0"]),
@@ -422,7 +418,7 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
-/* Brut Force WIP*/
+
 /* rutube */
 .raichu-progress-bar-module__progressBarBefore [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
 .raichu-progress-bar-module__progressBarThumb [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
@@ -440,14 +436,13 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
-/* Brut Force */
+
 /*Dood*/
 .vjs-play-progress.vjs-slider-bar::before,
 .plyr--full-ui input[type="range"]::-moz-range-thumb {
 
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
 }
-/* Brut Force */
 .vjs-play-progress.vjs-slider-bar::before:not(sendvid.com) {
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite;
     border-radius: 100%;
