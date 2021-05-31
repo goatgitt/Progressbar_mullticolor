@@ -60,3 +60,6 @@ actually works with:
 <p>the domain vidlox.me</p>
 <p>the domain vshare.eu</p>
 <p>the domain ok.ru</p>
+<p>the domain twitch.tv</p>
+<p>the domain vimeo.com</p>
+<p>all of instances of peertube</p>
