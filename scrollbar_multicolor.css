@@ -1,7 +1,9 @@
+@namespace url(http://www.w3.org/1999/xhtml);
 /* 👋🏽 Hello, fellow web developer! 👋🏽 */
 /* Initial setup */
 :root {
     --color-transition-duration: 10s;
+    --color-transition-duration2: 30s;
     --standard-ease: cubic-bezier(0.4, 0.0, 0.2, 1)
 }
 
@@ -274,6 +276,45 @@ ytd-thumbnail:hover {
         fill: #f00
     }
 }
+/* keyframe for canvas */
+@keyframes Hue-Transition {
+    0% {
+        filter: contrast(300%) hue-rotate(340deg) /* red*/
+    }
+    5% {
+        filter: contrast(300%) hue-rotate(340deg) /* red*/
+    }
+    15% {
+        filter: contrast(250%)  hue-rotate(30deg) /* orange made by me */
+    }
+    25% {
+        filter:  hue-rotate(45deg) /* yellow lmao*/
+    }
+    35% {
+        filter: contrast(70%) hue-rotate(90deg) /* light green */
+    }
+    45% {
+        filter: contrast(350%) hue-rotate(90deg)
+    }
+    55% {
+        filter: contrast(70%) hue-rotate(180deg) /*light blue */
+    }
+    65% {
+        filter: contrast(350%) hue-rotate(180deg) /* dark blue normally*/
+    }
+    75% {
+        filter: contrast(350%) hue-rotate(-70deg) /* light purple */
+    }
+    85% {
+        filter: contrast(150%) hue-rotate(340deg) /* light red normally */
+    }
+    95% {
+        filter: contrast(300%) hue-rotate(340deg) /* red*/
+    }
+    100% {
+        filter: contrast(300%) hue-rotate(340deg) /* red*/
+    }
+}
 
 #div.vjs-default-skin.vjs-play-progress {
     background: transparent !important;
@@ -398,11 +439,12 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
+
 /* video tag */
 progress::-moz-progress-bar,
 progress::-webkit-progress-value,
 progress,
-video,
+
 .videocontrols,
 video::-webkit-media-controls-panel,
 .progressBar,
@@ -434,6 +476,8 @@ video::-webkit-media-controls-panel,
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
+
+
 /* open source project */
 /* MediaElement.js */
 .mejs__volume-handle,
@@ -529,7 +573,14 @@ video::-webkit-media-controls-panel,
 .player-b75b5775-b139-4cd5-8e2d-b1833b341eb3 .vp-controls .play-bar .played {
     background-color: BgTransition var(--color-transition-duration) linear infinite !important;
 }
-
+/* Sound cloud */
+.sceneLayer, .sc-button-play, .playbackTimeline, .heroPlayButton, .g-tabs-item, .header__logo, .premiumIconLink, .sc-button-group, .dashbox__icon, .dashbox__ctaLabel, .shuffleButton, .playbackSoundBadge__actions, .playControls__repeat, .composeMessage__sendButton, .sc-button-follow, .trackItem__trackTitle, .notificationIcon {
+    animation: Hue-Transition  var(--color-transition-duration2) linear infinite !important;
+  }
+  
+  .waveformCommentsNode {
+    filter: hue-rotate(0deg) !important;
+  }
 
 /*streamtape */
 .plyr--full-ui input[type="range"],
