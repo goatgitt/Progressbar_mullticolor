@@ -62,4 +62,4 @@ actually works with:
 <p>the domain ok.ru</p>
 <p>the domain twitch.tv</p>
 <p>the domain vimeo.com</p>
-<p>all of instances of peertube</p>
+<p>all of federations of peertube</p>
