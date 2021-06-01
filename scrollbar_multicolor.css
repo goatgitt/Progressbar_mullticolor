@@ -301,10 +301,10 @@ ytd-thumbnail:hover {
     65% {
         filter: contrast(350%) hue-rotate(180deg) /* dark blue normally*/
     }
-    75% {
+    80% {
         filter: contrast(350%) hue-rotate(-70deg) /* light purple */
     }
-    85% {
+    90% {
         filter: contrast(150%) hue-rotate(340deg) /* light red normally */
     }
    
@@ -460,7 +460,7 @@ video::-webkit-media-controls-panel,
 .flowplayer-ovp-branding-56058953-2cbd-4858-a915-1253bf7ef7b2 .fp-color,
 /*vimeo*/
 .played,
-.volume div:not([class="animate fill0"]),
+.volume div:not([class="animate fill0"]):not([class="volume__iconWrapper"]):not([class="volume__sliderWrapper"]):not([class="volume__sliderBackground"]),
 /*wigistream*/
 /*.bar-fill-1,*/
 /*ugly*/
