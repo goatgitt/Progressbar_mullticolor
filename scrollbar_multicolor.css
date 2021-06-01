@@ -319,6 +319,10 @@ ytd-thumbnail:hover {
 
 /* Background Animation */
 
+/* radio */
+.player .volume-scale__slider::-moz-range-thumb,
+.player .volume-scale__slider::-moz-range-track,
+
 /* canal */
 ._1eOxJweaILaumq-VtlI4SI,
 ._3SHBY66lMFqVCR0_BKIQ9Y,
@@ -580,11 +584,29 @@ video::-webkit-media-controls-panel,
 .player-b75b5775-b139-4cd5-8e2d-b1833b341eb3 .vp-controls .play-bar .played {
     background-color: BgTransition var(--color-transition-duration) linear infinite !important;
 }
+/* radio */
+.player__song .player__animate-icon .player__animate-icon--playing,
+.player__song .player__animate-icon--playing:not([class="js-logo-ddg"]){
+    animation: Hue-Transition  var(--color-transition-duration2) linear infinite running  !important;
+}
+/* radiooooo */
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-moz-range-track{
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    border: transparent !important;
+}
+/* radiooooo */
+.indicator{
+    animation: BgTransition var(--color-transition-duration) linear infinite;
+    filter: contrast(50%) hue-rotate(0deg);
+}
+
 /* Sound cloud */
 .sceneLayer, .sc-button-play, .playbackTimeline, .heroPlayButton, .g-tabs-item, .header__logo, .premiumIconLink, .sc-button-group, .dashbox__icon, .dashbox__ctaLabel, .shuffleButton, .playbackSoundBadge__actions, .playControls__repeat, .composeMessage__sendButton, .sc-button-follow, .trackItem__trackTitle, .notificationIcon {
-    animation: Hue-Transition  var(--color-transition-duration2) linear infinite running  !important;
+    animation: Hue-Transition  var(--color-transition-duration2)  linear infinite running  !important;
   }
   
+
   .waveformCommentsNode {
     filter: hue-rotate(0deg) !important;
   }
