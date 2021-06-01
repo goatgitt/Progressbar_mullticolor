@@ -304,7 +304,7 @@ ytd-thumbnail:hover {
     80% {
         filter: contrast(350%) hue-rotate(-70deg) /* light purple */
     }
-    90% {
+    95% {
         filter: contrast(150%) hue-rotate(340deg) /* light red normally */
     }
    
