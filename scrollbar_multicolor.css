@@ -423,6 +423,16 @@ a.ytp-sb-subscribe {
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
 }
+/*ytb music */
+#primaryProgress.tp-yt-paper-progress,
+.slider-knob-inner .style-scope .tp-yt-paper-slider,
+.slider-knob-inner.tp-yt-paper-slider::before,
+.slider-knob-inner.tp-yt-paper-slider,
+#primaryProgress.tp-yt-paper-progress:hover,
+.primaryProgress{
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite !important;
+    border: currentcolor !important;
+}
 /* twitch */
 .ScRangeFillValue-sc-1qrd37x-3.bEAVPu,
 .InjectLayout-sc-588ddc-0.eXwenY,
@@ -656,6 +666,7 @@ circle[fill=red] {
 [dark] #sentiment.ytd-video-primary-info-renderer #container.ytd-sentiment-bar-renderer {
     background-color: #666 !important
 }
+
 
 
 /* Making sure that the animation isn't applied on non-red elements */
