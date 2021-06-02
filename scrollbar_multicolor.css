@@ -1,18 +1,19 @@
 @namespace url(http://www.w3.org/1999/xhtml);
 /* 👋🏽 Hello, fellow web developer! 👋🏽 */
 /* Initial setup */
-:root {
+:root
+{
     --color-transition-duration: 10s;
     --color-transition-duration2: 35s;
-    --standard-ease: cubic-bezier(0.4, 0.0, 0.2, 1)
-}
+    --standard-ease: cubic-bezier(0.4, 0.0, 0.2, 1) }
 
-* {
-    outline: none;
-}
+*
+{
+    outline: none; }
 
 /* Scrollbar */
-[dark] body::-webkit-scrollbar {
+[dark] body::-webkit-scrollbar
+{
     width: 15px !important;
     height: 15px !important;
     display: block !important;
@@ -20,302 +21,299 @@
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMzIiCiAgIGhlaWdodD0iMzIiCiAgIHZpZXdCb3g9IjAgMCA4LjQ2NjY2NjYgOC40NjY2NjY2IgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmc4IgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkyLjMgKDI0MDU1NDYsIDIwMTgtMDMtMTEpIgogICBzb2RpcG9kaTpkb2NuYW1lPSJ1cC5zdmciPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMyIiAvPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpZD0iYmFzZSIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgICAgYm9yZGVyY29sb3I9IiM2NjY2NjYiCiAgICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwLjAiCiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIKICAgICBpbmtzY2FwZTp6b29tPSI3LjkxOTU5NTkiCiAgICAgaW5rc2NhcGU6Y3g9IjUuNzM0NjA5NSIKICAgICBpbmtzY2FwZTpjeT0iMjAuODY3MDU3IgogICAgIGlua3NjYXBlOmRvY3VtZW50LXVuaXRzPSJweCIKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJsYXllcjEiCiAgICAgc2hvd2dyaWQ9InRydWUiCiAgICAgdW5pdHM9InB4IgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTM2NiIKICAgICBpbmtzY2FwZTp3aW5kb3ctaGVpZ2h0PSI3NDUiCiAgICAgaW5rc2NhcGU6d2luZG93LXg9Ii04IgogICAgIGlua3NjYXBlOndpbmRvdy15PSItOCIKICAgICBpbmtzY2FwZTp3aW5kb3ctbWF4aW1pemVkPSIxIj4KICAgIDxpbmtzY2FwZTpncmlkCiAgICAgICB0eXBlPSJ4eWdyaWQiCiAgICAgICBpZD0iZ3JpZDgxNSIKICAgICAgIGVtcHNwYWNpbmc9IjQiCiAgICAgICBkb3R0ZWQ9InRydWUiIC8+CiAgPC9zb2RpcG9kaTpuYW1lZHZpZXc+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhNSI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGU+PC9kYzp0aXRsZT4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCwtMjg4LjUzMzMzKSI+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4yNjQ1ODMzMnB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1vcGFjaXR5OjE7ZmlsbC1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDIuMTE2NjY2NywyOTMuODI1IDQuMjMzMzMzMiwwIC0yLjExNjY2NjYsLTIuMTE2NjcgeiIKICAgICAgIGlkPSJwYXRoODE3IgogICAgICAgaW5rc2NhcGU6Y29ubmVjdG9yLWN1cnZhdHVyZT0iMCIKICAgICAgIHNvZGlwb2RpOm5vZGV0eXBlcz0iY2NjYyIgLz4KICA8L2c+Cjwvc3ZnPgo=), url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iCiAgIHhtbG5zOmNjPSJodHRwOi8vY3JlYXRpdmVjb21tb25zLm9yZy9ucyMiCiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB3aWR0aD0iMzIiCiAgIGhlaWdodD0iMzIiCiAgIHZpZXdCb3g9IjAgMCA4LjQ2NjY2NjYgOC40NjY2NjY2IgogICB2ZXJzaW9uPSIxLjEiCiAgIGlkPSJzdmc4IgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkyLjMgKDI0MDU1NDYsIDIwMTgtMDMtMTEpIgogICBzb2RpcG9kaTpkb2NuYW1lPSJkb3duLnN2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczIiIC8+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJiYXNlIgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgICBpbmtzY2FwZTpwYWdlc2hhZG93PSIyIgogICAgIGlua3NjYXBlOnpvb209IjcuOTE5NTk1OSIKICAgICBpbmtzY2FwZTpjeD0iNS43MzQ2MDk1IgogICAgIGlua3NjYXBlOmN5PSIyMC44NjcwNTciCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9InB4IgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9ImxheWVyMSIKICAgICBzaG93Z3JpZD0idHJ1ZSIKICAgICB1bml0cz0icHgiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxMzY2IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9Ijc0NSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTgiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii04IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiPgogICAgPGlua3NjYXBlOmdyaWQKICAgICAgIHR5cGU9Inh5Z3JpZCIKICAgICAgIGlkPSJncmlkODE1IgogICAgICAgZW1wc3BhY2luZz0iNCIKICAgICAgIGRvdHRlZD0idHJ1ZSIgLz4KICA8L3NvZGlwb2RpOm5hbWVkdmlldz4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGE1Ij4KICAgIDxyZGY6UkRGPgogICAgICA8Y2M6V29yawogICAgICAgICByZGY6YWJvdXQ9IiI+CiAgICAgICAgPGRjOmZvcm1hdD5pbWFnZS9zdmcreG1sPC9kYzpmb3JtYXQ+CiAgICAgICAgPGRjOnR5cGUKICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPgogICAgICAgIDxkYzp0aXRsZT48L2RjOnRpdGxlPgogICAgICA8L2NjOldvcms+CiAgICA8L3JkZjpSREY+CiAgPC9tZXRhZGF0YT4KICA8ZwogICAgIGlua3NjYXBlOmxhYmVsPSJMYXllciAxIgogICAgIGlua3NjYXBlOmdyb3VwbW9kZT0ibGF5ZXIiCiAgICAgaWQ9ImxheWVyMSIKICAgICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLC0yODguNTMzMzMpIj4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjI2NDU4MzMycHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Ik0gMi4xMTY2NjY3LDI5MS43MDgzMyBIIDYuMzQ5OTk5OSBMIDQuMjMzMzMzMywyOTMuODI1IFoiCiAgICAgICBpZD0icGF0aDgxNyIKICAgICAgIGlua3NjYXBlOmNvbm5lY3Rvci1jdXJ2YXR1cmU9IjAiCiAgICAgICBzb2RpcG9kaTpub2RldHlwZXM9ImNjY2MiIC8+CiAgPC9nPgo8L3N2Zz4K) !important;
     background-position: top center, bottom center !important;
     background-size: contain !important;
-    background-repeat: no-repeat !important;
-}
+    background-repeat: no-repeat !important; }
 
 /* Thumb */
-[dark] body::-webkit-scrollbar-thumb {
+[dark] body::-webkit-scrollbar-thumb
+{
     background: #fff4 !important;
     border-left: 2px solid !important;
     border-right: 2px solid !important;
-    border-color: #141414 !important;
-}
+    border-color: #141414 !important; }
 
-[dark] body::-webkit-scrollbar-thumb:hover {
-    background: #fff5 !important;
-}
+[dark] body::-webkit-scrollbar-thumb:hover
+{
+    background: #fff5 !important; }
 
-[dark] body::-webkit-scrollbar-thumb:active {
-    background: #fff6 !important;
-}
+[dark] body::-webkit-scrollbar-thumb:active
+{
+    background: #fff6 !important; }
 
 /* Buttons */
-[dark] body::-webkit-scrollbar-button:single-button {
+[dark] body::-webkit-scrollbar-button:single-button
+{
     background-position: center center;
     background-size: contain;
     display: block;
     height: 16px;
     width: 16px;
-    background: #14141488;
-}
+    background: #14141488; }
 
-[dark] body::-webkit-scrollbar-button:single-button:hover {
-    background: #14141444;
-}
+[dark] body::-webkit-scrollbar-button:single-button:hover
+{
+    background: #14141444; }
 
-[dark] body::-webkit-scrollbar-button:single-button:active {
-    background: #14141422;
-}
+[dark] body::-webkit-scrollbar-button:single-button:active
+{
+    background: #14141422; }
 
 
 /* Progress bar */
 .ytp-scrubber-button,
-.ytp-play-progress {
-    animation: BgTransition var(--color-transition-duration) linear infinite;
-}
+.ytp-play-progress
+{
+    animation: BgTransition var(--color-transition-duration) linear infinite; }
 
 /* Pop effect on videos */
 ytd-compact-video-renderer,
 .ytp-show-tiles .ytp-videowall-still,
-ytd-thumbnail {
-    transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) !important
-}
+ytd-thumbnail
+{
+    transition: all 250ms cubic-bezier(0.175, 0.885, 0.32, 1.275) !important }
 
 ytd-compact-video-renderer:hover,
 .ytp-show-tiles .ytp-videowall-still:hover,
-ytd-thumbnail:hover {
-    transform: scale(1.025)
-}
+ytd-thumbnail:hover
+{
+    transform: scale(1.025) }
 /* Make sure video tiles (shown after a video has finished) are above the others when they're hovered over */
-.ytp-show-tiles .ytp-videowall-still:hover ytd-thumbnail:hover {
-    z-index: 1000
-}
+.ytp-show-tiles .ytp-videowall-still:hover ytd-thumbnail:hover
+{
+    z-index: 1000 }
 
 /* KeyFrames for background col-or */
-@keyframes BgTransition {
-    0% {
-        background-color: #f00
-    }
-    5% {
-        background-color: #f00
-    }
-    15% {
-        background-color: #f80
-    }
-    25% {
-        background-color: #ff0
-    }
-    35% {
-        background-color: #8f0
-    }
-    45% {
-        background-color: #0f8
-    }
-    55% {
-        background-color: #08f
-    }
-    65% {
-        background-color: #00f
-    }
-    75% {
-        background-color: #80f
-    }
-    85% {
-        background-color: #f08
-    }
-    95% {
-        background-color: #f00
-    }
-    100% {
-        background-color: #f00
-    }
-}
+@keyframes BgTransition
+{
+    0%
+    {
+        background-color: #f00 }
+    5%
+    {
+        background-color: #f00 }
+    15%
+    {
+        background-color: #f80 }
+    25%
+    {
+        background-color: #ff0 }
+    35%
+    {
+        background-color: #8f0 }
+    45%
+    {
+        background-color: #0f8 }
+    55%
+    {
+        background-color: #08f }
+    65%
+    {
+        background-color: #00f }
+    75%
+    {
+        background-color: #80f }
+    85%
+    {
+        background-color: #f08 }
+    95%
+    {
+        background-color: #f00 }
+    100%
+    {
+        background-color: #f00 } }
 
-@keyframes BTransition {
-    0% {
-        background: #f00
-    }
-    5% {
-        background: #f00
-    }
-    15% {
-        background: #f80
-    }
-    25% {
-        background: #ff0
-    }
-    35% {
-        background: #8f0
-    }
-    45% {
-        background: #0f8
-    }
-    55% {
-        background: #08f
-    }
-    65% {
-        background: #00f
-    }
-    75% {
-        background: #80f
-    }
-    85% {
-        background: #f08
-    }
-    95% {
-        background: #f00
-    }
-    100% {
-        background: #f00
-    }
-}
-@keyframes BTransitionrepeat {
-    0% {
-        background: #f00 none repeat scroll 0% 0%
-    }
-    5% {
-        background: #f00 none repeat scroll 0% 0%
-    }
-    15% {
-        background: #f80 none repeat scroll 0% 0%
-    }
-    25% {
-        background: #ff0 none repeat scroll 0% 0%
-    }
-    35% {
-        background: #8f0 none repeat scroll 0% 0%
-    }
-    45% {
-        background: #0f8 none repeat scroll 0% 0%
-    }
-    55% {
-        background: #08f none repeat scroll 0% 0%
-    }
-    65% {
-        background: #00f none repeat scroll 0% 0%
-    }
-    75% {
-        background: #80f none repeat scroll 0% 0%
-    }
-    85% {
-        background: #f08 none repeat scroll 0% 0%
-    }
-    95% {
-        background: #f00 none repeat scroll 0% 0%
-    }
-    100% {
-        background: #f00 none repeat scroll 0% 0%
-    }
-}
+@keyframes BTransition
+{
+    0%
+    {
+        background: #f00 }
+    5%
+    {
+        background: #f00 }
+    15%
+    {
+        background: #f80 }
+    25%
+    {
+        background: #ff0 }
+    35%
+    {
+        background: #8f0 }
+    45%
+    {
+        background: #0f8 }
+    55%
+    {
+        background: #08f }
+    65%
+    {
+        background: #00f }
+    75%
+    {
+        background: #80f }
+    85%
+    {
+        background: #f08 }
+    95%
+    {
+        background: #f00 }
+    100%
+    {
+        background: #f00 } }
+@keyframes BTransitionrepeat
+{
+    0%
+    {
+        background: #f00 none repeat scroll 0% 0% }
+    5%
+    {
+        background: #f00 none repeat scroll 0% 0% }
+    15%
+    {
+        background: #f80 none repeat scroll 0% 0% }
+    25%
+    {
+        background: #ff0 none repeat scroll 0% 0% }
+    35%
+    {
+        background: #8f0 none repeat scroll 0% 0% }
+    45%
+    {
+        background: #0f8 none repeat scroll 0% 0% }
+    55%
+    {
+        background: #08f none repeat scroll 0% 0% }
+    65%
+    {
+        background: #00f none repeat scroll 0% 0% }
+    75%
+    {
+        background: #80f none repeat scroll 0% 0% }
+    85%
+    {
+        background: #f08 none repeat scroll 0% 0% }
+    95%
+    {
+        background: #f00 none repeat scroll 0% 0% }
+    100%
+    {
+        background: #f00 none repeat scroll 0% 0% } }
 /* KeyFrames for text and currentColor */
-@keyframes ColorTransition {
-    0% {
-        color: #f00
-    }
-    5% {
-        color: #f00
-    }
-    15% {
-        color: #f80
-    }
-    25% {
-        color: #ff0
-    }
-    35% {
-        color: #8f0
-    }
-    45% {
-        color: #0f8
-    }
-    55% {
-        color: #08f
-    }
-    65% {
-        color: #00f
-    }
-    75% {
-        color: #80f
-    }
-    85% {
-        color: #f08
-    }
-    95% {
-        color: #f00
-    }
-    100% {
-        color: #f00
-    }
-}
+@keyframes ColorTransition
+{
+    0%
+    {
+        color: #f00 }
+    5%
+    {
+        color: #f00 }
+    15%
+    {
+        color: #f80 }
+    25%
+    {
+        color: #ff0 }
+    35%
+    {
+        color: #8f0 }
+    45%
+    {
+        color: #0f8 }
+    55%
+    {
+        color: #08f }
+    65%
+    {
+        color: #00f }
+    75%
+    {
+        color: #80f }
+    85%
+    {
+        color: #f08 }
+    95%
+    {
+        color: #f00 }
+    100%
+    {
+        color: #f00 } }
 
 /* KeyFrames for SVG */
-@keyframes FillTransition {
-    0% {
-        fill: #f00
-    }
-    5% {
-        fill: #f00
-    }
-    15% {
-        fill: #f80
-    }
-    25% {
-        fill: #ff0
-    }
-    35% {
-        fill: #8f0
-    }
-    45% {
-        fill: #0f8
-    }
-    55% {
-        fill: #08f
-    }
-    65% {
-        fill: #00f
-    }
-    75% {
-        fill: #80f
-    }
-    85% {
-        fill: #f08
-    }
-    95% {
-        fill: #f00
-    }
-    100% {
-        fill: #f00
-    }
-}
+@keyframes FillTransition
+{
+    0%
+    {
+        fill: #f00 }
+    5%
+    {
+        fill: #f00 }
+    15%
+    {
+        fill: #f80 }
+    25%
+    {
+        fill: #ff0 }
+    35%
+    {
+        fill: #8f0 }
+    45%
+    {
+        fill: #0f8 }
+    55%
+    {
+        fill: #08f }
+    65%
+    {
+        fill: #00f }
+    75%
+    {
+        fill: #80f }
+    85%
+    {
+        fill: #f08 }
+    95%
+    {
+        fill: #f00 }
+    100%
+    {
+        fill: #f00 } }
 /* keyframe for canvas */
-@keyframes Hue-Transition {
-    0% {
-        filter: contrast(300%) hue-rotate(340deg)/* red*/
-    }
+@keyframes Hue-Transition
+{
+    0%
+    {
+        filter: contrast(300%) hue-rotate(340deg)/* red*/ }
+    10%
+    {
+        filter: contrast(250%) hue-rotate(30deg)/* orange made by me */ }
+    25%
+    {
+        filter: contrast(200%) hue-rotate(45deg)/* yellow lmao*/ }
+    35%
+    {
+        filter: contrast(70%) hue-rotate(85deg)/* light green */ }
+    45%
+    {
+        filter: contrast(350%) hue-rotate(90deg)/* dark green*/ }
+    55%
+    {
+        filter: contrast(70%) hue-rotate(175deg)/*light blue */ }
+    65%
+    {
+        filter: contrast(350%) hue-rotate(180deg)/* dark blue normally*/ }
+    80%
+    {
+        filter: contrast(350%) hue-rotate(-70deg)/* light purple */ }
+    95%
+    {
+        filter: contrast(150%) hue-rotate(340deg)/* light red normally */ }
 
+    100%
+    {
+        filter: contrast(300%) hue-rotate(340deg)/* red*/ } }
 
-    15% {
-        filter: contrast(250%) hue-rotate(30deg)/* orange made by me */
-    }
-    25% {
-        filter: contrast(200%) hue-rotate(45deg)/* yellow lmao*/
-    }
-    35% {
-        filter: contrast(70%) hue-rotate(85deg)/* light green */
-    }
-    45% {
-        filter: contrast(350%) hue-rotate(90deg)/* dark green*/
-    }
-    55% {
-        filter: contrast(70%) hue-rotate(175deg)/*light blue */
-    }
-    65% {
-        filter: contrast(350%) hue-rotate(180deg)/* dark blue normally*/
-    }
-    80% {
-        filter: contrast(350%) hue-rotate(-70deg)/* light purple */
-    }
-    95% {
-        filter: contrast(150%) hue-rotate(340deg)/* light red normally */
-    }
-
-    100% {
-        filter: contrast(300%) hue-rotate(340deg)/* red*/
-    }
-}
-
-#div.vjs-default-skin.vjs-play-progress {
-    background: transparent !important;
-}
+#div.vjs-default-skin.vjs-play-progress
+{
+    background: transparent !important; }
 
 /* Background Animation */
 /* radio */
@@ -398,14 +396,14 @@ yt-icon.yt-live-chat-ticker-renderer,
 .ytp-live-badge[disabled]::before,
 .ytp-sb-unsubscribe::before,
 #notification-count,
-a.ytp-sb-subscribe {
-    animation: BgTransition var(--color-transition-duration) linear infinite;
-}
+a.ytp-sb-subscribe
+{
+    animation: BgTransition var(--color-transition-duration) linear infinite; }
 /*streamtape */
-.plyr--full-ui input[type="range"] {
+.plyr--full-ui input[type="range"]
+{
     background-color: BgTransition var(--color-transition-duration) linear infinite !important;
-    animation: ColorTransition var(--color-transition-duration) linear infinite !important;
-}
+    animation: ColorTransition var(--color-transition-duration) linear infinite !important; }
 /* sendvid */
 /*.video-js , */
 .vjs-default-skin .vjs-play-progress,
@@ -419,36 +417,38 @@ a.ytp-sb-subscribe {
 .vjs-default-skin .vjs-progress-holder .vjs-play-progress::after,
 .vjs-default-skin .vjs-play-progress::after,
 .vjs-default-skin .vjs-progress-holder .vjs-play-progress:after,
-.vjs-default-skin .vjs-play-progress:after {
+.vjs-default-skin .vjs-play-progress:after
+{
     background-color: currentcolor !important;
     background-repeat: no-repeat !important;
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
-    -moz-transition: background-color linear 100000ms !important;
-}
+    -moz-transition: background-color linear 100000ms !important; }
 /*ytb music */
 #primaryProgress.tp-yt-paper-progress,
 .slider-knob-inner .style-scope .tp-yt-paper-slider,
 .slider-knob-inner.tp-yt-paper-slider::before,
 .slider-knob-inner.tp-yt-paper-slider,
 #primaryProgress.tp-yt-paper-progress:hover,
-.primaryProgress {
+.primaryProgress
+{
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite !important;
-    border: currentcolor !important;
-}
+    border: currentcolor !important; }
 /* twitch */
+.InjectLayout-sc-588ddc-0 .fvBhcR:not([class="ScTransitionBase-eg1bd7-0 ePaOfU tw-transition"]):not([class="InjectLayout-sc-588ddc-0 fvBhcR"]),
+.sc-AxjAm .StDqN .seekbar-thumb,
 .ScRangeFillValue-sc-1qrd37x-3.bEAVPu,
 .InjectLayout-sc-588ddc-0.eXwenY,
 .tw-range__fill-value-selector,
 .bEAVPu,
-.jgTPse::-moz-range-thumb {
+.jgTPse::-moz-range-thumb
+{
     background-color: currentcolor !important;
     background-repeat: no-repeat !important;
     border: currentcolor !important;
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
-    -moz-transition: background-color linear 100000ms !important;
-}
+    -moz-transition: background-color linear 100000ms !important; }
 
 /* video tag */
 progress::-moz-progress-bar,
@@ -477,15 +477,15 @@ video::-webkit-media-controls-panel,
 .bar-fill-2::selection,
 .bar-hover::selection,
 .media-control live,
-.bar-scrubber-icon {
+.bar-scrubber-icon
+{
     background: currentcolor !important;
     background-color: currentcolor !important;
     fill: currentcolor !important;
     background-repeat: no-repeat !important;
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
-    -moz-transition: background-color linear 100000ms !important;
-}
+    -moz-transition: background-color linear 100000ms !important; }
 
 
 /* open source project */
@@ -497,12 +497,12 @@ video::-webkit-media-controls-panel,
 .mejs__time-handle-content,
 .mejs__time-hovered,
 .mejs__horizontal-volume-current,
-.mejs__time-current {
+.mejs__time-current
+{
     border: currentcolor !important;
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
-    -moz-transition: background-color linear 100000ms !important;
-}
+    -moz-transition: background-color linear 100000ms !important; }
 
 /* rutube */
 .raichu-progress-bar-module__progressBarBefore [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
@@ -512,15 +512,15 @@ video::-webkit-media-controls-panel,
 .raichu-progress-bar-module__progressBarBefore,
 .raichu-progress-bar-module__progressBarThumb,
 .raichu-progress-bar-module__progressBarBefore,
-.raichu-progress-bar-module__progressBarThumb {
+.raichu-progress-bar-module__progressBarThumb
+{
     background: currentcolor none repeat scroll 0% 0% !important;
     background-color: currentcolor !important;
     fill: currentcolor !important;
     background-repeat: no-repeat !important;
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
-    -moz-transition: background-color linear 100000ms !important;
-}
+    -moz-transition: background-color linear 100000ms !important; }
 /* dailymotion */
 .np_SliderVolume-handle,
 /* hard to find*/
@@ -528,87 +528,110 @@ video::-webkit-media-controls-panel,
 .np_slider-fill .np_SliderVolume-fill,
 .np_slider-handle .np_SliderVolume-handle,
 .np_slider-fill .np_ProgressBarVideo-fill,
-.np_ProgressBarVideo-fill {
+.np_ProgressBarVideo-fill
+{
     background: currentcolor none repeat scroll 0% 0% !important;
     background-color: currentcolor !important;
     fill: currentcolor !important;
     background-repeat: no-repeat !important;
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
-    -moz-transition: background-color linear 100000ms !important;
-}
-.video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar {
-    background: grey !important;
-}
-.video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar .vjs-volume-level {
+    -moz-transition: background-color linear 100000ms !important; }
+.video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar
+{
+    background: grey !important; }
+.video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar .vjs-volume-level
+{
     background: currentcolor none repeat scroll 0% 0% !important;
     background-color: currentcolor !important;
     fill: currentcolor !important;
     background-repeat: no-repeat !important;
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
-    -moz-transition: background-color linear 100000ms !important;
-}
+    -moz-transition: background-color linear 100000ms !important; }
 /*Dood*/
 .vjs-play-progress.vjs-slider-bar::before,
-.plyr--full-ui input[type="range"]::-moz-range-thumb {
+.plyr--full-ui input[type="range"]::-moz-range-thumb
+{
 
-    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
-}
-.vjs-play-progress.vjs-slider-bar::before:not(sendvid.com) {
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important; }
+.vjs-play-progress.vjs-slider-bar::before:not(sendvid.com)
+{
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite;
-    border-radius: 100%;
-}
+    border-radius: 100%; }
 
-.s-default-skin .js-play-progress {
+.s-default-skin .js-play-progress
+{
     background: transparent;
     background-repeat: no-repeat !important;
     animation: BgTransition var(--color-transition-duration) linear infinite ! important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite ! important;
-    -webkit-transition: BgColorTransition var(--color-transition-duration) linear infinite ! important;
-}
-.vjs-default-skin .vjs-progress-holder #vjs-play-progress {
+    -webkit-transition: BgColorTransition var(--color-transition-duration) linear infinite ! important; }
+.vjs-default-skin .vjs-progress-holder #vjs-play-progress
+{
     background: transparent;
     background-repeat: no-repeat !important;
     animation: BgTransition var(--color-transition-duration) linear infinite ! important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite ! important;
-    -webkit-transition: BgColorTransition var(--color-transition-duration) linear infinite ! important;
-}
+    -webkit-transition: BgColorTransition var(--color-transition-duration) linear infinite ! important; }
 
 .vjs-default-skin .vjs-slider-horizontal .vjs-volume-level::before,
-.vjs-default-skin .vjs-volume-level::before {
-    animation: ColorTransition var(--color-transition-duration) linear infinite, BgTransition var(--color-transition-duration) linear infinite ! important;
-}
+.vjs-default-skin .vjs-volume-level::before
+{
+    animation: ColorTransition var(--color-transition-duration) linear infinite, BgTransition var(--color-transition-duration) linear infinite ! important; }
 
 /* vidbom */
-.player-b75b5775-b139-4cd5-8e2d-b1833b341eb3 .vp-controls .play-bar .played {
-    background-color: BgTransition var(--color-transition-duration) linear infinite !important;
-}
+.player-b75b5775-b139-4cd5-8e2d-b1833b341eb3 .vp-controls .play-bar .played
+{
+    background-color: BgTransition var(--color-transition-duration) linear infinite !important; }
 /* radio */
 .player__song .player__animate-icon .player__animate-icon--playing,
-.player__song .player__animate-icon--playing:not([class="js-logo-ddg"]) {
-    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;
-}
+.player__song .player__animate-icon--playing:not([class="js-logo-ddg"]):not([class="header__search-wrap"])
+{
+    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important; }
+
 /* radiooooo */
-input[type="range"]::-moz-range-thumb,
-input[type="range"]::-moz-range-track {
+input[type="range"]::-moz-range-thumb:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]),
+input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"])
+{
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
-    border: transparent !important;
+    border: transparent !important; }
+/*radio garden */
+.MediaVolumeSlider_input__DKzgo::-moz-range-thumb{
+animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    box-shadow: inset 0 0 0 var(--shadow-size) currentcolor !important; 
 }
 /* radiooooo */
-.body .progress .indicator {
+.body .progress .indicator
+{
     animation: BgTransition var(--color-transition-duration) linear infinite;
-    filter: contrast(50%) hue-rotate(0deg);
-}
+    filter: contrast(50%) hue-rotate(0deg); }
 /* tunes you*/
+.MediaVolumeSlider_activeTrack__1lL8G,
 .ui-slider-range .ui-corner-all .ui-widget-header .ui-slider-range-min,
 #player_volume_slider .ui-widget-header,
-#player_volume_slider .ui-slider-handle {
-    animation: BgTransition var(--color-transition-duration) linear infinite !important;
+#player_volume_slider .ui-slider-handle
+{
+    animation: BgTransition var(--color-transition-duration) linear infinite !important; }
+#player_volume_slider .ui-slider-handle:hover
+{
+    box-shadow: transparent 0px 0px 0px 0px; }
+/* worldwide fm */
+.dark .widget-progress,
+.dark .widget-current-position,
+.dark .widget-current-position::after{
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    border-color: currentcolor !important;
 }
-#player_volume_slider .ui-slider-handle:hover {
-    box-shadow: transparent 0px 0px 0px 0px;
+/* worldradiomap*/
+.scrubber:hover::-moz-range-thumb, .volumeControl:hover::-moz-range-thumb,
+
+.volumeControl::-moz-range-thumb, .scrubber::-moz-range-thumb,
+.volumeControl::-moz-range-progress, .scrubber{
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    background-color: currentcolor;
 }
+
 
 /* Sound cloud */
 .sceneLayer,
@@ -616,7 +639,7 @@ input[type="range"]::-moz-range-track {
 .playbackTimeline,
 .heroPlayButton,
 .g-tabs-item,
-.header__logo,
+.header__left .header__logo,
 .premiumIconLink,
 .sc-button-group,
 .dashbox__icon,
@@ -627,14 +650,14 @@ input[type="range"]::-moz-range-track {
 .composeMessage__sendButton,
 .sc-button-follow,
 .trackItem__trackTitle,
-.notificationIcon {
-    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;
-}
+.notificationIcon
+{
+    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important; }
 
 
-.waveformCommentsNode {
-    filter: hue-rotate(0deg) !important;
-}
+.waveformCommentsNode
+{
+    filter: hue-rotate(0deg) !important; }
 
 /*streamtape */
 .plyr--full-ui input[type="range"],
@@ -662,9 +685,9 @@ paper-radio-button[checked],
 paper-checkbox[checked],
 #main.ytd-commentbox,
 sup.ytp-swatch-color,
-.video-js {
-    animation: ColorTransition var(--color-transition-duration) linear infinite;
-}
+.video-js
+{
+    animation: ColorTransition var(--color-transition-duration) linear infinite; }
 
 /* SVG Fill Color Animation */
 /* sibnet */
@@ -700,19 +723,19 @@ path[fill="#f80000"],
 path[fill="#FF8983"],
 path[fill="#f00"],
 path[fill="#F00"],
-circle[fill=red] {
-    animation: FillTransition var(--color-transition-duration) linear infinite
-}
+circle[fill=red]
+{
+    animation: FillTransition var(--color-transition-duration) linear infinite }
 
 
 /* Forcing a default color on the like bar container */
-#sentiment.ytd-video-primary-info-renderer #container.ytd-sentiment-bar-renderer {
-    background-color: #aaa !important
-}
+#sentiment.ytd-video-primary-info-renderer #container.ytd-sentiment-bar-renderer
+{
+    background-color: #aaa !important }
 
-[dark] #sentiment.ytd-video-primary-info-renderer #container.ytd-sentiment-bar-renderer {
-    background-color: #666 !important
-}
+[dark] #sentiment.ytd-video-primary-info-renderer #container.ytd-sentiment-bar-renderer
+{
+    background-color: #666 !important }
 
 
 
@@ -720,9 +743,9 @@ circle[fill=red] {
 #main.ytd-commentbox .underline.is-highlighted.paper-input-container:not([v2]).paper-input-container .focused-line.paper-input-container,
 #channel.ytd-grid-channel-renderer paper-button.ytd-subscribe-button-renderer:not([subscribed]),
 ytd-mini-channel-renderer paper-button.ytd-subscribe-button-renderer:not([subscribed]),
-ytd-mini-channel-renderer paper-button.ytd-subscribe-button-renderer::before {
-    animation: none !important
-}
+ytd-mini-channel-renderer paper-button.ytd-subscribe-button-renderer::before
+{
+    animation: none !important }
 
 /* Ensuring `background-color` is always the same as the `currentcolor` for synchronization of animation */
 .vjs-default-skin.vjs-play-progress,
@@ -734,9 +757,9 @@ ytd-button-renderer.style-suggestive[is-paper-button]::before,
 paper-ripple[animating] #waves,
 #submit-button.ytd-commentbox,
 #onRadio.paper-radio-button,
-.ytp-volume-slider-handle {
-    background-color: currentcolor !important
-}
+.ytp-volume-slider-handle
+{
+    background-color: currentcolor !important }
 
 /* Ensuring `border-color` is always the same as the `currentcolor` for synchronization of animation */
 .vjs-default-skin.vjs-play-progress,
@@ -745,9 +768,9 @@ ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-re
 .badge-style-type-live-now.ytd-badge-supported-renderer,
 ytd-button-renderer.style-suggestive[is-paper-button],
 #checkbox.checked.paper-checkbox,
-#offRadio.paper-radio-button {
-    border-color: currentcolor !important
-}
+#offRadio.paper-radio-button
+{
+    border-color: currentcolor !important }
 
 /* Ensuring `color` is always inherited for synchronization of animation */
 .vjs-default-skin.vjs-play-progress,
@@ -756,15 +779,15 @@ ytd-toggle-button-renderer.style-default-active[is-icon-button] ytd-formatted-st
 ytd-toggle-button-renderer.style-default-active[is-icon-button],
 #ink.paper-radio-button[checked],
 #submit-button.ytd-commentbox,
-#ink.paper-checkbox[checked] {
-    color: inherit !important
-}
+#ink.paper-checkbox[checked]
+{
+    color: inherit !important }
 
 /* Ensuring `fill` is always the same as the `currentcolor` for synchronization of animation */
 .vjs-default-skin.vjs-play-progress,
-ytd-toggle-button-renderer.style-default-active[is-icon-button] yt-icon {
-    fill: currentcolor !important
-}
+ytd-toggle-button-renderer.style-default-active[is-icon-button] yt-icon
+{
+    fill: currentcolor !important }
 
 
 /* Forcing `color` to be white */
@@ -772,17 +795,17 @@ ytd-toggle-button-renderer.style-default-active[is-icon-button] yt-icon {
 .badge-style-type-featured.ytd-badge-supported-renderer,
 ytd-button-renderer.style-primary[is-paper-button],
 #submit-button.ytd-commentbox yt-formatted-string,
-button[aria-label="More actions"] + paper-ripple {
-    color: #fff !important
-}
+button[aria-label="More actions"] + paper-ripple
+{
+    color: #fff !important }
 
 /* Forcing translucent white text color */
 ytd-subscribe-button-renderer[new-subscribe-color] paper-button.ytd-subscribe-button-renderer[subscribed],
 paper-button.ytd-subscribe-button-renderer[subscribed] .deemphasize.yt-formatted-string,
 paper-button.ytd-subscribe-button-renderer[subscribed],
-.ytp-sb-unsubscribe {
-    color: #fffc
-}
+.ytp-sb-unsubscribe
+{
+    color: #fffc }
 
 [dark] .more-button-exp.ytd-comment-renderer:hover,
 [dark] .more-button-exp.ytd-comment-renderer:focus,
@@ -790,9 +813,9 @@ paper-button.ytd-subscribe-button-renderer[subscribed],
 [dark] .less-button-exp.ytd-comment-renderer:focus,
 [dark] .more-button-exp.ytd-comment-renderer,
 [dark] .less-button-exp.ytd-comment-renderer,
-[dark] paper-radio-button {
-    color: #fff8
-}
+[dark] paper-radio-button
+{
+    color: #fff8 }
 
 .more-button-exp.ytd-comment-renderer:hover,
 .more-button-exp.ytd-comment-renderer:focus,
@@ -802,137 +825,138 @@ paper-button.ytd-subscribe-button-renderer[subscribed],
 .less-button.ytd-comment-replies-renderer,
 .more-button-exp.ytd-comment-renderer,
 .less-button-exp.ytd-comment-renderer,
-paper-radio-button {
-    color: #888
-}
+paper-radio-button
+{
+    color: #888 }
 
 .more-button-exp.ytd-comment-replies-renderer,
-.less-button-exp.ytd-comment-replies-renderer {
-    color: var(--yt-spec-text-secondary)
-}
+.less-button-exp.ytd-comment-replies-renderer
+{
+    color: var(--yt-spec-text-secondary) }
 
 /* Making the paper ripple properly translucent and unobtrusive */
-paper-ripple[animating] #waves {
-    opacity: 0.15
-}
+paper-ripple[animating] #waves
+{
+    opacity: 0.15 }
 
 /* Fixing the layering of the volume slider */
-.ytp-volume-slider-handle::before {
-    z-index: -1
-}
+.ytp-volume-slider-handle::before
+{
+    z-index: -1 }
 
 /* Added theming to the `COMPACT_GRAY` subscribe buttons */
 ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
-ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
+ytd-toggle-button-renderer.style-compact-gray[is-paper-button]
+{
     background-color: #eee !important;
-    color: #1119 !important;
-}
+    color: #1119 !important; }
 
 [dark] ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer,
-[dark] ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
+[dark] ytd-toggle-button-renderer.style-compact-gray[is-paper-button]
+{
     background-color: #222 !important;
-    color: #eee9 !important;
-}
+    color: #eee9 !important; }
 
-ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer::before {
-    display: none;
-}
+ytd-subscribe-button-renderer[button-style="COMPACT_GRAY"] paper-button.ytd-subscribe-button-renderer::before
+{
+    display: none; }
 
 /* Defaut styling for both "SUBSCIBE" and "VOTE" buttons */
 paper-button.ytd-subscribe-button-renderer[subscribed],
 ytd-button-renderer.style-suggestive[is-paper-button],
-.ytp-sb-unsubscribe {
+.ytp-sb-unsubscribe
+{
     background: transparent;
     position: relative;
-    overflow: hidden
-}
+    overflow: hidden }
 
 paper-button.ytd-subscribe-button-renderer[subscribed]::before,
 ytd-button-renderer.style-suggestive[is-paper-button]::before,
-.ytp-sb-unsubscribe::before {
+.ytp-sb-unsubscribe::before
+{
     content: '';
     display: block;
     height: 100%;
     position: absolute;
-    width: 100%
-}
+    width: 100% }
 
 /* Making the "SUBSCRIBE" button have `BgTransition` at 50% brightness when subscribed */
 paper-button.ytd-subscribe-button-renderer[subscribed]::before,
-.ytp-sb-unsubscribe::before {
+.ytp-sb-unsubscribe::before
+{
     left: 0;
     top: 0;
     filter: brightness(50%);
-    z-index: -1
-}
+    z-index: -1 }
 
-.ytp-sb-unsubscribe {
-    z-index: 1
-}
+.ytp-sb-unsubscribe
+{
+    z-index: 1 }
 
 /* Making the "VOTE NOW" and "VIEW RESULTS" button background translucent */
-ytd-button-renderer.style-suggestive[is-paper-button]::before {
-    opacity: 0.075
-}
+ytd-button-renderer.style-suggestive[is-paper-button]::before
+{
+    opacity: 0.075 }
 
 /* Like/dislike bar ratio */
-#sentiment.ytd-video-primary-info-renderer:not([activated_]) {
-    color: #777 !important
-}
+#sentiment.ytd-video-primary-info-renderer:not([activated_])
+{
+    color: #777 !important }
 
-[dark] #sentiment.ytd-video-primary-info-renderer:not([activated_]) {
-    color: #aaa !important
-}
+[dark] #sentiment.ytd-video-primary-info-renderer:not([activated_])
+{
+    color: #aaa !important }
 
 /* Fixes */
 .badge-style-type-verified-artist.ytd-badge-supported-renderer yt-icon,
-.badge-style-type-verified.ytd-badge-supported-renderer yt-icon {
+.badge-style-type-verified.ytd-badge-supported-renderer yt-icon
+{
     width: var(--ytd-badge-icon-size, 13px);
     height: var(--ytd-badge-icon-size, 13px);
-    color: var(--ytd-badge-icon-color, var(--ytd-owner-badge-color))
-}
+    color: var(--ytd-badge-icon-color, var(--ytd-owner-badge-color)) }
 
-#metadata-line.ytd-grid-video-renderer :first-child::after {
+#metadata-line.ytd-grid-video-renderer :first-child::after
+{
     content: '•';
-    margin: 0 4px
-}
+    margin: 0 4px }
 
 ytd-guide-renderer .paper-item.paper-item:focus:before,
-ytd-guide-renderer paper-item:focus:before {
-    opacity: 0 !important
-}
+ytd-guide-renderer paper-item:focus:before
+{
+    opacity: 0 !important }
 
-[dark] .dropdown-content.paper-menu-button {
-    background-color: transparent !important;
-}
+[dark] .dropdown-content.paper-menu-button
+{
+    background-color: transparent !important; }
 
-[dark] #hearted-border.ytd-creator-heart-renderer {
-    fill: var(--app-drawer-content-container_-_background-color);
-}
+[dark] #hearted-border.ytd-creator-heart-renderer
+{
+    fill: var(--app-drawer-content-container_-_background-color); }
 
 /* Flattube Compatibility */
-.ytp-volume-slider-handle::after {
+.ytp-volume-slider-handle::after
+{
     background-color: #fff4 !important;
     opacity: 1;
-    z-index: -1
-}
+    z-index: -1 }
 
 
 /* "WATCHED" overlay */
-yt-img-shadow.ytd-thumbnail[loaded] + #overlays.ytd-thumbnail {
+yt-img-shadow.ytd-thumbnail[loaded] + #overlays.ytd-thumbnail
+{
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-end
-}
+    align-items: flex-end }
 
-ytd-thumbnail-overlay-resume-playback-renderer {
+ytd-thumbnail-overlay-resume-playback-renderer
+{
     position: static;
-    width: 100%
-}
+    width: 100% }
 
-#progress.ytd-thumbnail-overlay-resume-playback-renderer[style="width: 100%;"]::before {
+#progress.ytd-thumbnail-overlay-resume-playback-renderer[style="width: 100%;"]::before
+{
     content: 'WATCHED';
     position: absolute;
     left: 0;
@@ -948,70 +972,69 @@ ytd-thumbnail-overlay-resume-playback-renderer {
     background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     z-index: -1;
-    transition: opacity 250ms var(--standard-ease)
-}
+    transition: opacity 250ms var(--standard-ease) }
 
-#overlays:hover #progress.ytd-thumbnail-overlay-resume-playback-renderer[style="width: 100%;"]::before {
-    opacity: 0
-}
+#overlays:hover #progress.ytd-thumbnail-overlay-resume-playback-renderer[style="width: 100%;"]::before
+{
+    opacity: 0 }
 
-ytd-thumbnail-overlay-playback-status-renderer {
-    display: none;
-}
+ytd-thumbnail-overlay-playback-status-renderer
+{
+    display: none; }
 
 
 /* Like/Dislike Animation */
-@keyframes Like {
-    0% {
+@keyframes Like
+{
+    0%
+    {
         transform: rotate(5deg) scale(0.5);
-        opacity: 0;
-    }
-    45% {
-        transform: rotate(-7.5deg) scale(1.1);
-    }
-    65% {
+        opacity: 0; }
+    45%
+    {
+        transform: rotate(-7.5deg) scale(1.1); }
+    65%
+    {
         transform: rotate(5deg) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
+        opacity: 1; }
+    100%
+    {
+        transform: rotate(0deg); } }
 
-@keyframes Dislike {
-    0% {
+@keyframes Dislike
+{
+    0%
+    {
         transform: rotate(5deg) scale(0.75);
-        opacity: 0;
-    }
-    50% {
+        opacity: 0; }
+    50%
+    {
         transform: rotate(-7.5deg) scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(0deg);
-    }
-}
+        opacity: 1; }
+    100%
+    {
+        transform: rotate(0deg); } }
 
 #info ytd-toggle-button-renderer:nth-of-type(1) .style-default-active yt-icon,
-#like-button .style-default-active yt-icon {
+#like-button .style-default-active yt-icon
+{
     transform-origin: bottom left;
-    animation: Like 750ms var(--standard-ease) forwards
-}
+    animation: Like 750ms var(--standard-ease) forwards }
 
 #info ytd-toggle-button-renderer:nth-of-type(2) .style-default-active yt-icon,
-#dislike-button .style-default-active yt-icon {
+#dislike-button .style-default-active yt-icon
+{
     transform-origin: center right;
-    animation: Dislike 750ms var(--standard-ease) forwards
-}
-html:not(.style-scope) {
+    animation: Dislike 750ms var(--standard-ease) forwards }
+html:not(.style-scope)
+{
     --yt-spec-static-overlay-call-to-action: #3ea6ff --yt-live-chat-poll-editor-start-button-background-color: var(--yt-spec-call-to-action);
-    --yt-live-chat-toast-action-color: #2196f3;
-}
-html:not(.style-scope) {
+    --yt-live-chat-toast-action-color: #2196f3; }
+html:not(.style-scope)
+{
     --paper-toggle-button-checked-button-color: var(--yt-spec-call-to-action);
     --paper-toggle-button-checked-ink-color: var(--yt-spec-call-to-action);
     --paper-radio-button-checked-color: var(--yt-spec-call-to-action);
     --paper-radio-button-checked-ink-color: var(--yt-spec-call-to-action);
     --paper-checkbox-checked-color: var(--yt-spec-call-to-action);
-    --paper-checkbox-checked-ink-color: var(--yt-spec-call-to-action);
-}
+    --paper-checkbox-checked-ink-color: var(--yt-spec-call-to-action); }
