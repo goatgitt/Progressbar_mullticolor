@@ -63,3 +63,4 @@ actually works with:
 <p>the domain twitch.tv</p>
 <p>the domain vimeo.com</p>
 <p>all of federations of peertube</p>
+<p>Soundcloud with a few bugs <p>
