@@ -5,9 +5,9 @@ Created with an exemple from userstyles.org wich name is RainbowTube++ and wich 
 The link is below:
 <link>https://userstyles.org/styles/164882/rainbowtube</link>
 
-You can create an issue if you want to see a another website in this list
-
 Please, star me if you like this project
+
+You can create an issue if you want to see a another website in this list
 
 actually works with:
 <p>url wich the prefix is: <link>https://www.fembed.com</link> </p>
