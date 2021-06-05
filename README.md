@@ -1,11 +1,11 @@
 # scrollbar_mullticolor
 The objective is to put on all players a multicolor progressbar with the add-on stylus
 
-You can create an issue if you want to see a another website in this list
-
 Created with an exemple from userstyles.org wich name is RainbowTube++ and wich is reated by Justin Ikeako.
 The link is below:
 <link>https://userstyles.org/styles/164882/rainbowtube</link>
+
+You can create an issue if you want to see a another website in this list
 
 actually works with:
 <p>url wich the prefix is: <link>https://www.fembed.com</link> </p>
