@@ -7,6 +7,8 @@ The link is below:
 
 You can create an issue if you want to see a another website in this list
 
+Please, star me if you like this project
+
 actually works with:
 <p>url wich the prefix is: <link>https://www.fembed.com</link> </p>
 <p>url wich the prefix is: <link>https://mixdrop.sx/</link> </p>
