@@ -5,7 +5,9 @@
 {
     --color-transition-duration: 10s;
     --color-transition-duration2: 35s;
-    --standard-ease: cubic-bezier(0.4, 0.0, 0.2, 1) }
+    --standard-ease: cubic-bezier(0.4, 0.0, 0.2, 1);
+    --Multicolor: white;
+}
 
 *
 {
@@ -159,6 +161,9 @@ ytd-thumbnail:hover
     100%
     {
         background: #f00 } }
+
+
+
 @keyframes BTransitionrepeat
 {
     0%
@@ -311,11 +316,14 @@ ytd-thumbnail:hover
     {
         filter: contrast(300%) hue-rotate(340deg)/* red*/ } }
 
+
+
 #div.vjs-default-skin.vjs-play-progress
 {
     background: transparent !important; }
 
 /* Background Animation */
+
 /* radio */
 .player .volume-scale__slider::-moz-range-thumb,
 .player .volume-scale__slider::-moz-range-track,
@@ -450,6 +458,7 @@ a.ytp-sb-subscribe
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
 
+
 /* video tag */
 progress::-moz-progress-bar,
 progress::-webkit-progress-value,
@@ -549,6 +558,22 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
+.web-chrome-playback-lcd__volume-scrubber[type="range"]::-moz-range-thumb,
+.web-chrome-playback-lcd__scrub[type="range"]::-moz-range-thumb{
+    background: currentcolor none repeat scroll 0% 0% !important;
+    background-color: currentcolor !important;
+    fill: currentcolor !important;
+    background-repeat: no-repeat !important;
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
+    transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
+    -moz-transition: background-color linear 100000ms !important; 
+    border:currentcolor;
+}
+.web-chrome-playback-lcd__volume-scrubber[type="range"]::-moz-range-track,
+.web-chrome-playback-lcd__scrub[type="range"]::-moz-range-track{
+    
+    background-image:linear-gradient(90deg, var(--Multicolor) ,var(--playerVolumeTrack) var(--volume)) !important;
+}
 /*Dood*/
 .vjs-play-progress.vjs-slider-bar::before,
 .plyr--full-ui input[type="range"]::-moz-range-thumb
@@ -579,7 +604,18 @@ video::-webkit-media-controls-panel,
 .vjs-default-skin .vjs-volume-level::before
 {
     animation: ColorTransition var(--color-transition-duration) linear infinite, BgTransition var(--color-transition-duration) linear infinite ! important; }
-
+.vjs-theme-fantasy .vjs-play-progress::before{
+    border: currentcolor ;
+}
+.vjs-theme-city .vjs-volume-level::before,
+.vjs-theme-forest .vjs-volume-level::before{
+    animation: BgTransition var(--color-transition-duration) linear infinite ! important;
+    border-bottom: currentcolor;
+}
+.vjs-theme-city .vjs-volume-bar::before,
+.vjs-theme-forest .vjs-volume-bar::before{
+    border-color: transparent !important;
+}
 /* vidbom */
 .player-b75b5775-b139-4cd5-8e2d-b1833b341eb3 .vp-controls .play-bar .played
 {
@@ -591,6 +627,8 @@ video::-webkit-media-controls-panel,
     animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important; }
 
 /* radiooooo */
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-moz-range-track,
 input[type="range"]::-moz-range-thumb:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]),
 input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"])
 {
@@ -632,7 +670,7 @@ animation: BgTransition var(--color-transition-duration) linear infinite, BTrans
     background-color: currentcolor;
 }
 
-
+.cp-progress-1, .cp-progress-2,
 /* Sound cloud */
 .sceneLayer,
 .sc-button-play,
