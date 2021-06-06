@@ -465,10 +465,16 @@ video::-webkit-media-controls-panel,
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important;
     border: currentcolor; }
-.web-chrome-playback-lcd__volume-scrubber[type="range"]::-moz-range-track,
+.web-chrome-playback-lcd__volume-scrubber[type="range"]::-moz-range-track{
+    background-image: linear-gradient(90deg, lightgreen  var(--volume), black var(--volume)) !important;
+    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;}
 .web-chrome-playback-lcd__scrub[type="range"]::-moz-range-track {
-
-    background-image: linear-gradient(90deg, var(--Multicolor), var(--playerVolumeTrack) var(--volume)) !important; }
+    background-image: linear-gradient(90deg, lightgreen var(--progress), black  var(--progress)) !important;
+    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;}
+.web-chrome-playback-lcd__volume-scrubber[type="range"]::-moz-range-thumb,
+.web-chrome-playback-lcd__scrub[type="range"]::-moz-range-thumb{
+    filter: contrast(100%);
+}
 /*Dood*/
 .vjs-play-progress.vjs-slider-bar::before,
 .plyr--full-ui input[type="range"]::-moz-range-thumb {
