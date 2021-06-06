@@ -1,4 +1,4 @@
-# scrollbar_mullticolor
+# Progressbar_mullticolor
 The objective is to put on all players a multicolor progressbar with the add-on stylus
 
 Created with an exemple from userstyles.org wich name is RainbowTube++ and wich is created by Justin Ikeako.
