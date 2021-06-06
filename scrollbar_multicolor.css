@@ -224,6 +224,8 @@ ytd-thumbnail:hover {
     background: transparent !important; }
 
 /* Background Animation */
+.oneline-progress-fill,
+.oneline-progress-seek-fill,
 /* radio */
 .player .volume-scale__slider::-moz-range-thumb,
 .player .volume-scale__slider::-moz-range-track,
@@ -447,6 +449,7 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
+
 /*reddit*/
 ._3fnsfWuIyofBJBBCbeOZzM, ._2MDmJfq0z5K-d2xH--GnRU,
 ._320cReGqgLhY1pPA-fM8Z7,
@@ -511,9 +514,20 @@ progressbar-value,
 body.front-dark .bar,
 /* radiooooo */
 input[type="range"]::-moz-range-thumb:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]),
-input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]) {
+input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]),
+.input[type="range"]::-moz-range-thumb:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]),
+.input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]) {
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     border: transparent !important; }
+.slider-track-active .gradient-deep-purple,
+.slider-track-active .gradient-default{
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    background: currentcolor;
+}
+.slider-track-input::-moz-range-thumb{
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    box-shadow: inset 0 0 0 var(--shadow-size) currentcolor !important;
+    border: transparent;}
 /*radio garden */
 .MediaVolumeSlider_input__DKzgo::-moz-range-thumb {
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
