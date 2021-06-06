@@ -418,6 +418,11 @@ video::-webkit-media-controls-panel,
 .raichu-progress-bar-module__progressBarBefore,
 .raichu-progress-bar-module__progressBarThumb {
     background: green; }
+.ui-video-player-component .ui-video-player-controls .controllers-block .sound-block .sound-slider .ui-video-seek-slider .connect,
+.ui-video-player-component .ui-video-player-controls .controllers-block .sound-block .sound-slider .ui-video-seek-slider .thumb .handler,
+.ui-video-seek-slider .track .main .connect,
+.ui-video-seek-slider .thumb .handler,
+.progress__filled,
 /* dailymotion */
 .np_SliderVolume-handle,
 /* hard to find*/
@@ -425,7 +430,7 @@ video::-webkit-media-controls-panel,
 .np_slider-fill .np_SliderVolume-fill,
 .np_slider-handle .np_SliderVolume-handle,
 .np_slider-fill .np_ProgressBarVideo-fill,
-.np_ProgressBarVideo-fill {
+.np_ProgressBarVideo-fill{
     background: currentcolor none repeat scroll 0% 0% !important;
     background-color: currentcolor !important;
     fill: currentcolor !important;
@@ -433,6 +438,14 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
+/* video tag */
+.volumeControl::-moz-range-thumb, .scrubber::-moz-range-thumb,
+.volumeControl::-moz-range-progress, .volumeControl::-moz-range-thumb,
+.scrubber:hover::-moz-range-thumb, .volumeControl:hover::-moz-range-thumb,
+.progressBar, .scrubber, .volumeControl{
+    background-color: green !important;
+    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;
+}
 .video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar {
     background: grey !important; }
 .video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar .vjs-volume-level {
