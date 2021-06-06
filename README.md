@@ -4,7 +4,7 @@ The objective is to put on all players a multicolor progressbar with the add-on 
 Created with an exemple from userstyles.org wich name is RainbowTube++ and wich is created by Justin Ikeako.
 The link is below:
 <link>https://userstyles.org/styles/164882/rainbowtube</link>
-/n
+<p></p>
 Please, star me if you like this project
 
 You can create an issue if you want to see a another website in this list
