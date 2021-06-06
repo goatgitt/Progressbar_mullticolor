@@ -5,10 +5,10 @@ Created with an exemple from userstyles.org wich name is RainbowTube++ and wich 
 The link is below:
 <link>https://userstyles.org/styles/164882/rainbowtube</link>
 <p></p>
-Please, star me if you like this project
-
+Please, star me  if you like this project
+<p></p>
 You can create an issue if you want to see a another website in this list
-
+<p></p>
 actually works with:
 <p>url wich the prefix is: <link>https://www.fembed.com</link> </p>
 <p>url wich the prefix is: <link>https://mixdrop.sx/</link> </p>
