@@ -525,6 +525,9 @@ input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"])
 .input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"]):not([class="MediaVolumeSlider_track__26oKv"]) {
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     border: transparent !important; }
+
+.slider-track .gradient-deep-purple,
+.slider-track .gradient-default,
 .slider-track-active .gradient-deep-purple,
 .slider-track-active .gradient-default{
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
