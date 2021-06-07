@@ -226,6 +226,8 @@ ytd-thumbnail:hover {
 /* Background Animation */
 .oneline-progress-fill,
 .oneline-progress-seek-fill,
+/*facebook*/
+._2yu9,
 /* radio */
 .player .volume-scale__slider::-moz-range-thumb,
 .player .volume-scale__slider::-moz-range-track,
@@ -391,8 +393,19 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
-
-
+/* twitter*/
+.css-1dbjc4n .r-1pz39u2 .r-14lw9ot .r-1xfd6ze,
+.r-14lw9ot.r-14lw9ot,
+/* facebook */
+._3pas,
+._3pat,
+._3par,
+._2yua ._4sxb,
+._2yua{
+    border: currentcolor !important;
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite;
+    transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
+    -moz-transition: background-color linear 100000ms !important; }
 /* open source project */
 /* MediaElement.js */
 .mejs__volume-handle,
@@ -417,20 +430,6 @@ video::-webkit-media-controls-panel,
 .raichu-progress-bar-module__progressBarThumb,
 .raichu-progress-bar-module__progressBarBefore,
 .raichu-progress-bar-module__progressBarThumb {
-    background: green; }
-.ui-video-player-component .ui-video-player-controls .controllers-block .sound-block .sound-slider .ui-video-seek-slider .connect,
-.ui-video-player-component .ui-video-player-controls .controllers-block .sound-block .sound-slider .ui-video-seek-slider .thumb .handler,
-.ui-video-seek-slider .track .main .connect,
-.ui-video-seek-slider .thumb .handler,
-.progress__filled,
-/* dailymotion */
-.np_SliderVolume-handle,
-/* hard to find*/
-.np_SliderVolume-fill,
-.np_slider-fill .np_SliderVolume-fill,
-.np_slider-handle .np_SliderVolume-handle,
-.np_slider-fill .np_ProgressBarVideo-fill,
-.np_ProgressBarVideo-fill{
     background: currentcolor none repeat scroll 0% 0% !important;
     background-color: currentcolor !important;
     fill: currentcolor !important;
@@ -438,14 +437,21 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
-/* video tag */
-.volumeControl::-moz-range-thumb, .scrubber::-moz-range-thumb,
-.volumeControl::-moz-range-progress, .volumeControl::-moz-range-thumb,
-.scrubber:hover::-moz-range-thumb, .volumeControl:hover::-moz-range-thumb,
-.progressBar, .scrubber, .volumeControl{
-    background-color: green !important;
-    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;
-}
+/* dailymotion */
+.np_SliderVolume-handle,
+/* hard to find*/
+.np_SliderVolume-fill,
+.np_slider-fill .np_SliderVolume-fill,
+.np_slider-handle .np_SliderVolume-handle,
+.np_slider-fill .np_ProgressBarVideo-fill,
+.np_ProgressBarVideo-fill {
+    background: currentcolor none repeat scroll 0% 0% !important;
+    background-color: currentcolor !important;
+    fill: currentcolor !important;
+    background-repeat: no-repeat !important;
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite!important;
+    transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
+    -moz-transition: background-color linear 100000ms !important; }
 .video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar {
     background: grey !important; }
 .video-js.vjs-peertube-skin .vjs-control-bar .vjs-volume-bar .vjs-volume-level {
@@ -548,39 +554,6 @@ input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"])
 .MediaVolumeSlider_input__DKzgo::-moz-range-thumb {
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     box-shadow: inset 0 0 0 var(--shadow-size) currentcolor !important; }
-/* react player */
-.video-react-play-progress .video-react-slider-bar,
-.video-react-play-progress .video-react-slider-bar::before,
-.video-react-icon-circle::before, .video-react .video-react-play-progress::before, .video-react .video-react-volume-level::before,
-.video-react .video-react-time-tooltip, .video-react .video-react-mouse-display::after, .video-react .video-react-play-progress::after,
-.video-react .video-react-slider-horizontal .video-react-volume-level::before{
-    animation: ColorTransition var(--color-transition-duration) linear infinite !important;
-}
-.art-layer .art-layer-miniProgressBar,
-.art-progress-played,
-.art-progress-indicator,
-.art-video-player .art-bottom .art-controls .art-control-volume .art-volume-panel .art-volume-slider-handle::before,
-.art-volume-slider-handle,
-.video-react-volume-level,
-.video-react-play-progress .video-react-slider-bar{
-    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
-}
-.art-layer .art-layer-miniProgressBar,
-.art-progress-played,
-.art-progress-indicator,
-.raichu-progress-bar-module__progressBarBefore [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
-.raichu-progress-bar-module__progressBarThumb [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
-.raichu-progress-bar-module__progressBarBefore [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
-.raichu-progress-bar-module__progressBarThumb [style="background: rgb(255, 100, 95) none repeat scroll 0% 0%;"],
-.raichu-progress-bar-module__progressBarBefore,
-.raichu-progress-bar-module__progressBarThumb,
-.raichu-progress-bar-module__progressBarBefore,
-.raichu-progress-bar-module__progressBarThumb{
-    animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;
-}
-.art-volume-slider-handle{
-    filter: contrast(100%) !important;
-}
 /* radiooooo */
 .body .progress .indicator {
     animation: BgTransition var(--color-transition-duration) linear infinite;
