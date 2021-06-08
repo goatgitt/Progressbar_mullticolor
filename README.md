@@ -70,3 +70,4 @@ actually works with:
 <p>Soundcloud with a few bugs <p>
  <p>Facebook medias</p>
 <p>Twitter medias <p>
+works with ~75% of playes
