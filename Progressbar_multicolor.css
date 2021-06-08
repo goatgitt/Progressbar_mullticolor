@@ -1,3 +1,15 @@
+/* ==UserStyle==
+@name         ProgressBar Multicolor
+@description  put on all website on all of websites 
+@author       goatgitt (https://github.com/goatgitt)
+@homepageURL  https://github.com/goatgitt/Progressbar_mullticolor
+@supportURL   https://github.com/goatgitt/Progressbar_mullticolor/issues
+@updateURL    https://github.com/goatgitt/Progressbar_mullticolor/blob/main/Progressbar_multicolor.css
+@preprocessor stylus
+@version      Beta
+@license      GPL-3.0
+==UserStyle== */
+/* ⭐ Star it if you like this project ⭐ */
 @namespace url(http://www.w3.org/1999/xhtml);
 /* 👋🏽 Hello, fellow web developer! 👋🏽 */
 /* Initial setup */
@@ -253,7 +265,6 @@ ytd-thumbnail:hover {
 .oneline-progress-seek-fill,
 /*facebook*/
 ._2yu9,
-
 /* radio */
 .player .volume-scale__slider::-moz-range-thumb,
 .player .volume-scale__slider::-moz-range-track,
@@ -591,6 +602,10 @@ progressbar-value,
 /* vidbom */
 .player-b75b5775-b139-4cd5-8e2d-b1833b341eb3 .vp-controls .play-bar .played {
     background-color: BgTransition var(--color-transition-duration) linear infinite !important; }
+/* FulpTube*/
+.html5-volume-slider,
+.html5-scrubber-button,
+.html5-play-progress,
 /* radio */
 .player__song .player__animate-icon .player__animate-icon--playing,
 .player__song .player__animate-icon--playing:not([class="js-logo-ddg"]):not([class="header__search-wrap"]) {
@@ -700,8 +715,6 @@ input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"])
 .trackItem__trackTitle,
 .notificationIcon {
     animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important; }
-
-
 .waveformCommentsNode {
     filter: hue-rotate(0deg) !important; }
 
