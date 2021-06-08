@@ -231,7 +231,22 @@ ytd-thumbnail:hover {
 /* radio */
 .player .volume-scale__slider::-moz-range-thumb,
 .player .volume-scale__slider::-moz-range-track,
+/* apple medias*/
+.controls-volume .ac-slider-thumb,
+.controls-volume .ac-slider-thumb-background,
+.controls-volume .ac-slider-scrubbed,
+.controls-progress-indicator .ac-slider-thumb-background,
+.controls-progress-indicator .ac-slider-thumb-overlay,
 
+.ac-slider-thumb-background-wrapper .ac-slider-thumb-overlay,
+.ac-slider-thumb-overlay,
+.ac-slider-thumb,
+
+.controls-progress-indicator .ac-slider-buffered,
+.controls-progress-indicator .ac-slider-scrubbed,
+.controls-progress-indicator .ac-slider-hover-notch,
+.ac-slider-hover-notch .invert-element,
+.controls-progress-bar:hover .ac-slider-thumb-background,
 /* canal */
 ._1eOxJweaILaumq-VtlI4SI,
 ._3SHBY66lMFqVCR0_BKIQ9Y,
@@ -393,6 +408,7 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
+.controls-progress-indicator .ac-slider-thumb-overlay,
 /* twitter*/
 .css-1dbjc4n .r-1pz39u2 .r-14lw9ot .r-1xfd6ze,
 .r-14lw9ot.r-14lw9ot,
@@ -406,6 +422,9 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
+.controls-progress-indicator .ac-slider-thumb-overlay{
+    border: currentcolor;
+}
 /* open source project */
 /* MediaElement.js */
 .mejs__volume-handle,
@@ -965,13 +984,3 @@ ytd-thumbnail-overlay-playback-status-renderer {
 #dislike-button .style-default-active yt-icon {
     transform-origin: center right;
     animation: Dislike 750ms var(--standard-ease) forwards }
-html:not(.style-scope) {
-    --yt-spec-static-overlay-call-to-action: #3ea6ff --yt-live-chat-poll-editor-start-button-background-color: var(--yt-spec-call-to-action);
-    --yt-live-chat-toast-action-color: #2196f3; }
-html:not(.style-scope) {
-    --paper-toggle-button-checked-button-color: var(--yt-spec-call-to-action);
-    --paper-toggle-button-checked-ink-color: var(--yt-spec-call-to-action);
-    --paper-radio-button-checked-color: var(--yt-spec-call-to-action);
-    --paper-radio-button-checked-ink-color: var(--yt-spec-call-to-action);
-    --paper-checkbox-checked-color: var(--yt-spec-call-to-action);
-    --paper-checkbox-checked-ink-color: var(--yt-spec-call-to-action); }
