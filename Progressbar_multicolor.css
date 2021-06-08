@@ -195,6 +195,31 @@ ytd-thumbnail:hover {
     95% {fill: #f00 }
     
     100% {fill: #f00 } }
+/* circular progressbar*/
+@keyframes StrokeTransition {
+    0% {stroke: #f00 }
+    
+    5% {stroke: #f00 }
+    
+    15% {stroke: #f80 }
+    
+    25% {stroke: #ff0 }
+    
+    35% {stroke: #8f0 }
+    
+    45% {stroke: #0f8 }
+    
+    55% {stroke: #08f }
+    
+    65% {stroke: #00f }
+    
+    75% {stroke: #80f }
+    
+    85% {stroke: #f08 }
+    
+    95% {stroke: #f00 }
+    
+    100% {stroke: #f00 } }
 
 /* keyframe for canvas */
 @keyframes Hue-Transition {
@@ -228,6 +253,7 @@ ytd-thumbnail:hover {
 .oneline-progress-seek-fill,
 /*facebook*/
 ._2yu9,
+
 /* radio */
 .player .volume-scale__slider::-moz-range-thumb,
 .player .volume-scale__slider::-moz-range-track,
@@ -408,6 +434,20 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
+/* tidal */
+.indicator--1sAy9,
+.nativeRange--28dUA::-moz-range-progress,
+.nativeRange--28dUA::-moz-range-progress::after,
+.nativeRange--28dUA:hover[type="range"]::-moz-range-thumb,
+.nativeRange--28dUA[type="range"]::-moz-range-thumb,
+.nativeRange--28dUA::-moz-range-track,
+.wrapper--1HiJz:hover .knob--eG-Gb,
+.knob--eG-Gb{
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+}
+.CircularProgressbar-path{
+    animation: StrokeTransition var(--color-transition-duration) linear infinite !important;
+}
 .controls-progress-indicator .ac-slider-thumb-overlay,
 /* twitter*/
 .css-1dbjc4n .r-1pz39u2 .r-14lw9ot .r-1xfd6ze,
