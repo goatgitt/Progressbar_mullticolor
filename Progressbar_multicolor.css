@@ -261,6 +261,9 @@ ytd-thumbnail:hover {
     background: transparent !important; }
 
 /* Background Animation */
+/*  arte*/
+.rc-slider-handle,
+.rc-slider-track,
 .oneline-progress-fill,
 .oneline-progress-seek-fill,
 /*facebook*/
