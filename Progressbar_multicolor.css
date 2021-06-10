@@ -1007,7 +1007,6 @@ ytd-thumbnail-overlay-resume-playback-renderer {
 ytd-thumbnail-overlay-playback-status-renderer {
     display: none; }
 
-
 /* Like/Dislike Animation */
 @keyframes Like {
     0% {
