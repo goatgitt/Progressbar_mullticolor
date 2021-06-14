@@ -411,7 +411,9 @@ a.ytp-sb-subscribe {
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite, BTransitionrepeat var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
-
+.plyr--full-ui.plyr--video input[type="range"]::-moz-range-track {
+    background-color: rgb(0,0,0);
+}
 
 /* video tag */
 progress::-moz-progress-bar,
@@ -504,6 +506,10 @@ video::-webkit-media-controls-panel,
 .raichu-progress-bar-module__progressBarBefore,
 .raichu-progress-bar-module__progressBarThumb {
         background: green; }
+/* crunchyroll */
+div.css-1dbjc4n.r-1awozwy.r-1p0dtai.r-18u37iz.r-1pi2tsx.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af.r-13qz1uu div .r-1pi2tsx .css-1dbjc4n:not([class="r-1pi2tsx css-1dbjc4n"]),
+.r-1pi2tsx .css-1dbjc4n [style="background-color: rgb(198, 198, 205); border-radius: 2px;"]:not([class="r-1pi2tsx css-1dbjc4n"]),
+.css-1dbjc4n [style="background-color: rgb(244, 117, 33); border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 4px; height: 16px; opacity: 1; transform: scale(1); width: 16px;"]:not([class="css-9pa8cd"]),
 /* video tag */
 .volumeControl::-moz-range-thumb, .scrubber::-moz-range-thumb,
 .volumeControl::-moz-range-progress, .volumeControl::-moz-range-thumb,
@@ -511,6 +517,10 @@ video::-webkit-media-controls-panel,
 .progressBar, .scrubber, .volumeControl{
     background-color: green !important;
     animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;
+}
+/* crunchyroll */
+.r-1d2f490 .r-u8s1d .r-zchlnj.r-ipm5af .r-13qz1uu:not([class="css-9pa8cd"]):not(img):not([id="velocity-overlay-package"]){
+     animation: Hue-Transition var(--color-transition-duration2) linear infinite running !important;
 }
 .ui-video-player-component .ui-video-player-controls .controllers-block .sound-block .sound-slider .ui-video-seek-slider .connect,
 .ui-video-player-component .ui-video-player-controls .controllers-block .sound-block .sound-slider .ui-video-seek-slider .thumb .handler,
@@ -1006,6 +1016,7 @@ ytd-thumbnail-overlay-resume-playback-renderer {
 
 ytd-thumbnail-overlay-playback-status-renderer {
     display: none; }
+
 
 /* Like/Dislike Animation */
 @keyframes Like {
