@@ -450,6 +450,12 @@ video::-webkit-media-controls-panel,
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
     -moz-transition: background-color linear 100000ms !important; }
+/* microsoft medias*/
+.c-slider div > span,
+.c-slider div > button,
+.c-slider div > button::before{
+    animation: BgTransition var(--color-transition-duration) linear infinite !important;
+}
 /* tidal */
 .indicator--1sAy9,
 .nativeRange--28dUA::-moz-range-progress,
