@@ -513,7 +513,8 @@ video::-webkit-media-controls-panel,
 .raichu-progress-bar-module__progressBarThumb {
         background: green; }
 /* crunchyroll */
-div.css-1dbjc4n.r-1awozwy.r-1p0dtai.r-18u37iz.r-1pi2tsx.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af.r-13qz1uu div .r-1pi2tsx .css-1dbjc4n:not([class="r-1pi2tsx css-1dbjc4n"]),
+.css-1dbjc4n .r-1awozwy .r-1p0dtai .r-18u37iz .r-1pi2tsx .r-1d2f490 .r-u8s1d .r-zchlnj .r-ipm5af .r-13qz1uu > .css-1dbjc4n .r-1pi2tsx,
+.css-1dbjc4n .r-1awozwy .r-1p0dtai .r-18u37iz .r-1pi2tsx .r-1d2f490 .r-u8s1d .r-zchlnj .r-ipm5af .r-13qz1uu > .r-1pi2tsx .css-1dbjc4n,
 .r-1pi2tsx .css-1dbjc4n [style="background-color: rgb(198, 198, 205); border-radius: 2px;"]:not([class="r-1pi2tsx css-1dbjc4n"]),
 .css-1dbjc4n [style="background-color: rgb(244, 117, 33); border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 4px; height: 16px; opacity: 1; transform: scale(1); width: 16px;"]:not([class="css-9pa8cd"]),
 /* video tag */
@@ -583,6 +584,14 @@ div.css-1dbjc4n.r-1awozwy.r-1p0dtai.r-18u37iz.r-1pi2tsx.r-1d2f490.r-u8s1d.r-zchl
 .web-chrome-playback-lcd__volume-scrubber[type="range"]::-moz-range-thumb,
 .web-chrome-playback-lcd__scrub[type="range"]::-moz-range-thumb{
     filter: contrast(100%);
+}
+/* ytb userscrypt*/
+.vsb-container > span[style="margin-right: 10px; font-weight: bold; font-size: 120%; color: rgb(255, 85, 0); cursor: pointer;"]{
+    animation: ColorTransition var(--color-transition-duration) linear infinite ! important;
+}
+#distillvideo > a{
+    animation: BgTransition var(--color-transition-duration) linear infinite ! important;
+    color: black !important;
 }
 /*Dood*/
 .vjs-play-progress.vjs-slider-bar::before,
