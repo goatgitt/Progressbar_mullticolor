@@ -261,6 +261,18 @@ ytd-thumbnail:hover {
     background: transparent !important; }
 
 /* Background Animation */
+.ui-igslider-handle .ui-state-default .ui-corner-all,
+/* Vue js project player */
+.vcp-progress-played,
+.vcp-progress-played .thumb-drag,
+.volume-current,
+/* game music player */
+.range-knob,
+.range-bar .range-bar-active,
+.range-md-dark .range-bar-active, .range-md-dark .range-knob, .range-md-dark .range-pin, .range-md-dark .range-pin::before,
+/* matvideo project */
+.mat-slider-thumb,
+.mat-slider-track-fill,
 /*  arte*/
 .rc-slider-handle,
 .rc-slider-track,
@@ -414,7 +426,12 @@ a.ytp-sb-subscribe {
 .plyr--full-ui.plyr--video input[type="range"]::-moz-range-track {
     background-color: rgb(0,0,0);
 }
-
+/* vue player project */
+.volume-control .btn-control-panel .progress .volume-current .thumb-drag{
+    animation: BgTransition var(--color-transition-duration) linear infinite;
+    width: 20px !important;
+    filter: contrast(30%);
+}
 /* video tag */
 progress::-moz-progress-bar,
 progress::-webkit-progress-value,
@@ -488,6 +505,10 @@ video::-webkit-media-controls-panel,
     border: currentcolor;
 }
 /* open source project */
+/* Bootstrap project */
+.audioplayer-volume-adjust > div > div,
+.audioplayer-bar-played,
+.audioplayer:not(.audioplayer-playing) .audioplayer-bar-played::after,
 /* MediaElement.js */
 .mejs__volume-handle,
 .mejs__volume-current,
@@ -512,6 +533,14 @@ video::-webkit-media-controls-panel,
 .raichu-progress-bar-module__progressBarBefore,
 .raichu-progress-bar-module__progressBarThumb {
         background: green; }
+/* Angular project */
+vg-scrub-bar-current-time,
+vg-scrub-bar-current-time.ng-scope,
+.volumeBackground > .volumeValue,
+/* react project */
+div[style="height: 5px; background-color: rgba(255, 255, 255, 0.5); width: 100%; border-radius: 2.5px;"] > div,
+div[style="user-select: none; padding-top: 4px; padding-bottom: 4px; box-sizing: border-box; cursor: pointer; position: relative;"] > div:nth-child(2n),
+div[style="height: 5px; background-color: rgba(255, 255, 255, 0.5); width: 100px; border-radius: 2.5px;"] > div,
 /* crunchyroll */
 .css-1dbjc4n .r-1awozwy .r-1p0dtai .r-18u37iz .r-1pi2tsx .r-1d2f490 .r-u8s1d .r-zchlnj .r-ipm5af .r-13qz1uu > .css-1dbjc4n .r-1pi2tsx,
 .css-1dbjc4n .r-1awozwy .r-1p0dtai .r-18u37iz .r-1pi2tsx .r-1d2f490 .r-u8s1d .r-zchlnj .r-ipm5af .r-13qz1uu > .r-1pi2tsx .css-1dbjc4n,
@@ -720,6 +749,7 @@ input[type="range"]::-moz-range-track:not([class="PlayBar_barContainer__3Z5MT"])
 .volumeControl::-moz-range-progress, .scrubber {
     animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
     background-color: currentcolor; }
+.playback__seeker,
 .visualizer .active,
 .media-player .visualizer .active canvas,
 .visualizer .active canvas,
