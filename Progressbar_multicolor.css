@@ -9,6 +9,7 @@
 @version      Beta
 @license      GPL-3.0
 ==UserStyle== */
+
 /* ⭐ Star it if you like this project ⭐ */
 @namespace url(http://www.w3.org/1999/xhtml);
 /* 👋🏽 Hello, fellow web developer! 👋🏽 */
@@ -383,6 +384,7 @@ a.ytp-sb-subscribe {
     animation: ColorTransition var(--color-transition-duration) linear infinite !important; }
 /* sendvid */
 /*.video-js , */
+.video-js .vjs-volume-panel .vjs-volume-horizontal .vjs-slider .vjs-volume-level::before,
 .vjs-default-skin .vjs-play-progress,
 .vjs-default-skin .vjs-progress-holder .vjs-play-progress,
 .vjs-play-progress,
@@ -488,6 +490,8 @@ video::-webkit-media-controls-panel,
     animation: StrokeTransition var(--color-transition-duration) linear infinite !important;
 }
 .controls-progress-indicator .ac-slider-thumb-overlay,
+/* fr2 */
+div[style="user-select: none; padding-top: 4px; padding-bottom: 4px; box-sizing: border-box; cursor: pointer; position: relative;"] > div,
 /* twitter*/
 .css-1dbjc4n .r-1pz39u2 .r-14lw9ot .r-1xfd6ze,
 .r-14lw9ot.r-14lw9ot,
@@ -504,6 +508,18 @@ video::-webkit-media-controls-panel,
 .controls-progress-indicator .ac-slider-thumb-overlay{
     border: currentcolor;
 }
+/* fr 2 */
+
+.ftv-magneto--slider > div:nth-child(2)> div:nth-child(3),
+.ftv-magneto--slider > div:nth-child(2)> div:nth-child(2),
+.ftv-magneto--slider > div:nth-child(2)> div,
+.ftv-magneto--slider > div> div[role=presentation],
+.ftv-magneto--slider > div> div[role=presentation]:nth-child(2),
+.ftv-magneto--slider > div> div:nth-child(3){
+    border: currentcolor !important;
+    animation: BgTransition var(--color-transition-duration) linear infinite, BTransition var(--color-transition-duration) linear infinite, ColorTransition var(--color-transition-duration) linear infinite, FillTransition var(--color-transition-duration) linear infinite !important;
+    transition: BgColorTransition var(--color-transition-duration) linear infinite !important;
+    -moz-transition: background-color linear 100000ms !important; }
 /* open source project */
 /* Bootstrap project */
 .audioplayer-volume-adjust > div > div,
@@ -539,7 +555,7 @@ vg-scrub-bar-current-time.ng-scope,
 .volumeBackground > .volumeValue,
 /* react project */
 div[style="height: 5px; background-color: rgba(255, 255, 255, 0.5); width: 100%; border-radius: 2.5px;"] > div,
-div[style="user-select: none; padding-top: 4px; padding-bottom: 4px; box-sizing: border-box; cursor: pointer; position: relative;"] > div:nth-child(2n),
+div[style="user-select: none; padding-top: 4px; padding-bottom: 4px; box-sizing: border-box; cursor: pointer; position: relative;"] > div,
 div[style="height: 5px; background-color: rgba(255, 255, 255, 0.5); width: 100px; border-radius: 2.5px;"] > div,
 /* crunchyroll */
 .css-1dbjc4n .r-1awozwy .r-1p0dtai .r-18u37iz .r-1pi2tsx .r-1d2f490 .r-u8s1d .r-zchlnj .r-ipm5af .r-13qz1uu > .css-1dbjc4n .r-1pi2tsx,
